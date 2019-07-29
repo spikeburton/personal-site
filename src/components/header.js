@@ -41,6 +41,9 @@ const Header = ({ siteTitle }) => (
         padding: 1.45rem 1.0875rem;
         max-width: 960px;
         border-bottom: 1px solid #eee;
+        @media (max-width: 420px) {
+          padding: 0.85rem 1.0875rem;
+        }
       `}
     >
       <h2
