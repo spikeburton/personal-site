@@ -3,7 +3,14 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const NavLink = ({ to, children }) => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+  <li
+    style={{
+      display: `inline-block`,
+      marginRight: `1rem`,
+      fontFamily: `Helvetica Neue, Helvetica, sans-serif`,
+      fontWeight: `bold`,
+    }}
+  >
     <Link to={to} style={{ color: `hsla(0, 0%, 0%, 0.8)` }}>
       {children}
     </Link>
