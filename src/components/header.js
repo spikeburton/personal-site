@@ -39,8 +39,8 @@ const Header = ({ siteTitle }) => (
       css={css`
         margin: 0 auto;
         padding: 1.45rem 1.0875rem;
-        max-width: 960px;
         border-bottom: 1px solid #eee;
+        max-width: 960px;
         @media (max-width: 420px) {
           padding: 0.85rem 1.0875rem;
         }
