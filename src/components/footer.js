@@ -3,7 +3,8 @@ import Social from "./social"
 
 const Footer = () => (
   <footer>
-    <Social />© {new Date().getFullYear()}, Spike Burton
+    <Social />
+    <h6>© {new Date().getFullYear()}, Spike Burton</h6>
   </footer>
 )
 
