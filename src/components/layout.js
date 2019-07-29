@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { css } from "@emotion/core"
 
 import Header from "./header"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,7 +36,7 @@ const Layout = ({ children }) => {
         `}
       >
         <main>{children}</main>
-        <footer>© {new Date().getFullYear()}, Spike Burton</footer>
+        <Footer />
       </div>
     </>
   )
