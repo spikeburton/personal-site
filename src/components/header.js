@@ -1,16 +1,32 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import PropTypes from "prop-types"
+import { Link } from "gatsby"
+import { css } from "@emotion/core"
 
 const NavLink = ({ to, children }) => (
   <li
-    style={{
-      display: `inline-block`,
-      marginRight: `1rem`,
-    }}
+    css={css`
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 1rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    `}
   >
     <h4>
-      <Link to={to} style={{ color: `hsla(0, 0%, 0%, 0.8)` }}>
+      <Link
+        to={to}
+        css={css`
+          color: hsla(0, 0%, 0%, 0.8);
+          &:hover {
+            color: hsla(180, 100%, 25%, 0.8);
+          }
+          &:active {
+            color: hsla(180, 100%, 25%, 1);
+          }
+        `}
+      >
         {children}
       </Link>
     </h4>
@@ -20,25 +36,43 @@ const NavLink = ({ to, children }) => (
 const Header = ({ siteTitle }) => (
   <header>
     <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-        borderBottom: `1px solid #eee`,
-      }}
+      css={css`
+        margin: 0 auto;
+        padding: 1.45rem 1.0875rem;
+        max-width: 960px;
+        border-bottom: 1px solid #eee;
+      `}
     >
-      <h2 style={{ margin: 0, display: `inline-block` }}>
+      <h2
+        css={css`
+          margin: 0;
+          display: inline-block;
+        `}
+      >
         <Link
           to="/"
-          style={{
-            color: `hsla(0, 0%, 0%, 0.8)`,
-          }}
+          css={css`
+            color: hsla(0, 0%, 0%, 0.8);
+            &:hover {
+              color: hsla(0, 0%, 0%, 1);
+            }
+          `}
         >
           {siteTitle}
         </Link>
       </h2>
-      <nav style={{ display: `inline-block`, float: `right` }}>
-        <ul style={{ listStyle: `none` }}>
+      <nav
+        css={css`
+          display: inline-block;
+          float: right;
+        `}
+      >
+        <ul
+          css={css`
+            list-style: none;
+            margin: 0;
+          `}
+        >
           <NavLink to="/">About</NavLink>
           <NavLink to="/">Blog</NavLink>
         </ul>
