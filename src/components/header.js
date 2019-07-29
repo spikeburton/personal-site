@@ -7,13 +7,13 @@ const NavLink = ({ to, children }) => (
     style={{
       display: `inline-block`,
       marginRight: `1rem`,
-      fontFamily: `Helvetica Neue, Helvetica, sans-serif`,
-      fontWeight: `bold`,
     }}
   >
-    <Link to={to} style={{ color: `hsla(0, 0%, 0%, 0.8)` }}>
-      {children}
-    </Link>
+    <h4>
+      <Link to={to} style={{ color: `hsla(0, 0%, 0%, 0.8)` }}>
+        {children}
+      </Link>
+    </h4>
   </li>
 )
 
@@ -24,6 +24,7 @@ const Header = ({ siteTitle }) => (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
+        borderBottom: `1px solid #eee`,
       }}
     >
       <h2 style={{ margin: 0, display: `inline-block` }}>
@@ -36,10 +37,10 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h2>
-      <nav style={{ float: "right" }}>
-        <ul style={{ listStyle: "none" }}>
-          <NavLink to="/">Link 1</NavLink>
-          <NavLink to="/">Link 2</NavLink>
+      <nav style={{ display: `inline-block`, float: `right` }}>
+        <ul style={{ listStyle: `none` }}>
+          <NavLink to="/">About</NavLink>
+          <NavLink to="/">Blog</NavLink>
         </ul>
       </nav>
     </div>
