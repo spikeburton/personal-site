@@ -21,7 +21,8 @@ export default () => {
       <ul
         css={css`
           list-style: none;
-          margin: 0;
+          margin: 0 auto;
+          max-width: 800px;
         `}
       >
         {posts &&
@@ -32,7 +33,7 @@ export default () => {
                 &:last-child {
                   margin-bottom: 0;
                 }
-                &:last-child div {
+                &:last-child .read-more-box {
                   border-bottom: none;
                   padding-bottom: 0;
                   margin-bottom: 2.45rem;
@@ -40,37 +41,42 @@ export default () => {
               `}
               key={post.id}
             >
+              <div
+                css={css`
+                  font-size: 0.875em;
+                  opacity: 0.5;
+                  float: right;
+                `}
+              >
+                {new Date(post.createdAt).toLocaleDateString()}
+              </div>
               <a
                 href={post.url}
                 title={post.title}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  css={css`
-                    margin-bottom: 0;
-                  `}
-                  src={post.image}
-                  alt={post.title}
-                />
+                <img src={post.image} alt={post.title} />
               </a>
-              <h5
+              <h4
                 css={css`
+                  margin-top: 0.15rem;
                   margin-bottom: 0.45rem;
                 `}
               >
                 {post.title}
-              </h5>
+              </h4>
               <p
                 css={css`
                   font-size: 0.8975em;
                   opacity: 0.7;
-                  margin-bottom: 0.85rem;
+                  margin-bottom: 1.45rem;
                 `}
               >
                 {post.subtitle}
               </p>
               <div
+                className="read-more-box"
                 css={css`
                   text-align: center;
                   padding-bottom: 1.2rem;
