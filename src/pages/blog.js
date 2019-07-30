@@ -16,8 +16,6 @@ export default () => {
       .then(data => setPosts(data))
   }, [])
 
-  console.log(posts)
-
   return (
     <Layout>
       <ul
@@ -42,13 +40,20 @@ export default () => {
               `}
               key={post.id}
             >
-              <img
-                css={css`
-                  margin-bottom: 0;
-                `}
-                src={post.image}
-                alt={post.title}
-              />
+              <a
+                href={post.url}
+                title={post.title}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  css={css`
+                    margin-bottom: 0;
+                  `}
+                  src={post.image}
+                  alt={post.title}
+                />
+              </a>
               <h5
                 css={css`
                   margin-bottom: 0.45rem;
