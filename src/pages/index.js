@@ -26,12 +26,9 @@ export default () => {
           @media (max-width: 768px) {
             max-width: 150px;
           }
-          @media (min-width: 1024px) {
-            max-width: 250px;
-          }
           @media (min-width: 1440px) {
             max-width: 300px;
-            margin: 0 0.95rem 3.85rem;
+            margin: 0 auto 2.85rem;
           }
         `}
       >

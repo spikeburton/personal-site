@@ -9,12 +9,9 @@ export default () => {
   const [posts, setPosts] = useState()
 
   useEffect(() => {
-    fetch(
-      `https://3omgwutekj.execute-api.us-east-2.amazonaws.com/default/MediumJSONParser?username=spikeburton`,
-      {
-        method: "POST",
-      }
-    )
+    fetch(process.env.GATSBY_MEDIUM_API, {
+      method: "POST",
+    })
       .then(res => res.json())
       .then(data => setPosts(data))
   }, [])
