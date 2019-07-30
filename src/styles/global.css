@@ -30,9 +30,16 @@ body {
   box-sizing: inherit;
 }
 a {
+  color: hsla(180, 100%, 25%, 0.8);
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+}
+a:hover {
+  color: hsla(16, 100%, 47%, 0.8);
+}
+a:active {
+  color: hsla(16, 100%, 47%, 1);
 }
 a:active,
 a:hover {
