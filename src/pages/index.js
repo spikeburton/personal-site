@@ -17,7 +17,7 @@ export default () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="About" />
       {/* Avatar */}
       <div
         css={css`

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react"
 import { css } from "@emotion/core"
+
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export default () => {
   const [posts, setPosts] = useState()
@@ -18,6 +20,7 @@ export default () => {
 
   return (
     <Layout>
+      <SEO title="Blog" />
       <ul
         css={css`
           list-style: none;
