@@ -37,6 +37,9 @@ const Social = () => {
         justify-content: space-around;
         margin-top: 2.65rem;
         margin-bottom: 1.85rem;
+        @media (min-width: 1024px) {
+          max-width: 400px;
+        }
       `}
     >
       {data.social.frontmatter.links.map((link, i) => (

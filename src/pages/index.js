@@ -1,4 +1,5 @@
 import React from "react"
+import { css } from "@emotion/core"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -7,7 +8,22 @@ import SEO from "../components/seo"
 export default () => (
   <Layout>
     <SEO title="Home" />
-    <div style={{ maxWidth: `150px`, margin: `0 auto 1.45rem` }}>
+    <div
+      css={css`
+        max-width: 200px;
+        margin: 0 auto 1.45rem;
+        @media (max-width: 768px) {
+          max-width: 150px;
+        }
+        @media (min-width: 1024px) {
+          max-width: 250px;
+        }
+        @media (min-width: 1440px) {
+          max-width: 300px;
+          margin: 0 0.95rem 2.85rem;
+        }
+      `}
+    >
       <Image />
     </div>
     <h1>About Me</h1>

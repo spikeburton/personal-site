@@ -36,6 +36,15 @@ const Layout = ({ children }) => {
           max-width: 650px;
           margin: 2.85rem auto 0.65rem;
           padding: 0px 1.0875rem 1.45rem;
+          @media (min-width: 1024px) {
+            max-width: 850px;
+          }
+          @media (min-width: 1440px) {
+            max-width: 1040px;
+          }
+          @media (min-width: 2560px) {
+            max-width: 1440px;
+          }
         `}
       >
         <main>{children}</main>
