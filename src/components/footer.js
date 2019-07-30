@@ -10,7 +10,7 @@ const Footer = () => (
         href="https://www.facebook.com/spikeburton"
         target="_blank"
         rel="noopener noreferrer"
-        title="Whaaa?!"
+        title="Whaaa?! Shameless plug ..."
       >
         <span role="img" aria-label="plug">
           🔌
