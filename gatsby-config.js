@@ -13,6 +13,7 @@ module.exports = {
     title: `Spike Burton`,
     description: `Spike Burton - Personal Website`,
     author: `@spike_burton`,
+    image: `https://public-shit-69.s3.us-east-2.amazonaws.com/photos/IMG_0760.jpg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -41,7 +42,7 @@ module.exports = {
         background_color: colorSelector(NODE_ENV),
         theme_color: colorSelector(NODE_ENV),
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/sb-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-emotion`,

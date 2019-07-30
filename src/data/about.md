@@ -19,6 +19,6 @@ I've previously written about my concurrent interests in writing code and electr
 ...
 My writing has been published in The Startup, tweeted by [Postman](linktosite), and ...
 
-My current trending interests in languages and tools include **Node/React**, **Go**, and going serverless in the cloud with **Amazon Web Services**. The service that powers the blog for this site is an AWS Lambda function built in Node which forwards data from my Medium account, while the site itself is constructed using GatsbyJS.
+My trending interests in tools and languages currently include **Node/React**, **Go**, and going serverless in the cloud with **Amazon Web Services**. The service that powers the blog for this site is an AWS Lambda function built in Node which forwards data from my Medium account, while the site itself is constructed using GatsbyJS.
 
 Please [reach out](mailto) if you'd like to talk! I am currently seeking new opportunities and would love to speak with you. I am also always down to get coffee and shoot the breeze about music, the tech space in general, and video games that I used to be good at but probably suck at now.
