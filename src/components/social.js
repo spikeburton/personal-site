@@ -52,7 +52,7 @@ const Social = () => {
           rel="noopener noreferrer"
           css={css`
             display: inline-block;
-            color: initial;
+            color: hsla(0, 0%, 0%, 0.8);
             -webkit-transition: all 1s ease;
             transition: all 1s ease;
             &:hover {
