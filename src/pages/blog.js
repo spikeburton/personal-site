@@ -3,6 +3,7 @@ import { css } from "@emotion/core"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Spinner from "../components/spinner"
 
 export default () => {
   const [posts, setPosts] = useState()
@@ -28,7 +29,7 @@ export default () => {
           max-width: 800px;
         `}
       >
-        {posts &&
+        {posts ? (
           posts.map(post => (
             <li
               css={css`
@@ -126,7 +127,10 @@ export default () => {
                 </a>
               </div>
             </li>
-          ))}
+          ))
+        ) : (
+          <Spinner />
+        )}
       </ul>
     </Layout>
   )
