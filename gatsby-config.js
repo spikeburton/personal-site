@@ -11,8 +11,8 @@ const colorSelector = env => {
 module.exports = {
   siteMetadata: {
     title: `Spike Burton`,
-    description: `Personal Website`,
-    author: `@spikeburton`,
+    description: `Spike Burton - Personal Website`,
+    author: `@spike_burton`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
