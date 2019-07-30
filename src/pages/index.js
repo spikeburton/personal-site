@@ -20,7 +20,7 @@ export default () => (
         }
         @media (min-width: 1440px) {
           max-width: 300px;
-          margin: 0 0.95rem 2.85rem;
+          margin: 0 0.95rem 3.85rem;
         }
       `}
     >

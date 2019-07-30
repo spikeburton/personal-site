@@ -38,7 +38,8 @@ const Social = () => {
         margin-top: 2.65rem;
         margin-bottom: 1.85rem;
         @media (min-width: 1024px) {
-          max-width: 400px;
+          max-width: 300px;
+          justify-content: space-evenly;
         }
       `}
     >
