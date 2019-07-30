@@ -59,7 +59,18 @@ export default () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={post.image} alt={post.title} />
+                <img
+                  css={css`
+                    opacity: 1;
+                    transition: all ease 0.5s;
+                    -webkit-transition: all ease 0.5s;
+                    &:hover {
+                      opacity: 0.6;
+                    }
+                  `}
+                  src={post.image}
+                  alt={post.title}
+                />
               </a>
               <h4
                 css={css`
