@@ -13,7 +13,8 @@ facilis saepe labore quos ab aliquid repudiandae nam!
 
 I'm a proponent of clean, semantic code and a mobile-first user experience ...
 
-When I'm not glued to my screen, you can find me on the ATL beltline ...
+When I'm not glued to my screen, you can find me on the ATL beltline ... I am currently enjoying the vibrant city life that Atlanta has to offer, and am forunate enough to have grown into adulthood right in the center of it.
+...
 I've previously written about my concurrent interests in writing code and electronic music production, which you can read more about [here](linktoblog)
 
 My current trending interests in languages and tools include **Node/React**, **Go**, and serverless - specifically **Amazon Web Services**. The service that powers the blog for this site is an AWS Lambda function built in Node which forwards data from my Medium account, while the site itself is constructed using GatsbyJS.
