@@ -35,7 +35,6 @@ const Social = () => {
       css={css`
         display: flex;
         justify-content: space-around;
-        width: 100%;
         margin-top: 2.65rem;
         margin-bottom: 1.85rem;
       `}
