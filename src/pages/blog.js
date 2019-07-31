@@ -27,7 +27,11 @@ export default () => {
           max-width: 800px;
         `}
       >
-        {posts ? posts.map(post => <Post post={post} />) : <Spinner />}
+        {posts ? (
+          posts.map(post => <Post key={post.id} post={post} />)
+        ) : (
+          <Spinner />
+        )}
       </ul>
     </Layout>
   )

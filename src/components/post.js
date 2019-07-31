@@ -14,7 +14,6 @@ export default ({ post }) => (
         margin-bottom: 2.45rem;
       }
     `}
-    key={post.id}
   >
     <div
       css={css`
@@ -42,6 +41,13 @@ export default ({ post }) => (
         `}
         src={post.image}
         alt={post.title}
+        // If the image fails to fetch (e.g. CDN is down)
+        // Just grab a random image
+        // ¯\_(ツ)_/¯
+        onError={e => {
+          e.target.src = `http://lorempixel.com/800/400/`
+          e.target.onerror = null
+        }}
       />
     </a>
     <h4
