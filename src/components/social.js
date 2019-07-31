@@ -43,7 +43,7 @@ const Social = () => {
         }
       `}
     >
-      {data.social.frontmatter.links.map((link, i) => (
+      {/* {data.social.frontmatter.links.map((link, i) => (
         <a
           key={i}
           href={link.url}
@@ -64,7 +64,7 @@ const Social = () => {
         >
           <FontAwesomeIcon size="2x" icon={icons[link.name.toLowerCase()]} />
         </a>
-      ))}
+      ))} */}
     </div>
   )
 }
