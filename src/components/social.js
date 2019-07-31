@@ -19,7 +19,7 @@ const icons = {
 const Social = () => {
   const data = useStaticQuery(graphql`
     query {
-      social: markdownRemark {
+      social: markdownRemark(fileAbsolutePath: { regex: "/data/social.md/" }) {
         frontmatter {
           links {
             name
