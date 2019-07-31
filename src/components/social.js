@@ -30,6 +30,8 @@ const Social = () => {
     }
   `)
 
+  console.log(data.social)
+
   return (
     <div
       css={css`
