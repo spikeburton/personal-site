@@ -1,24 +1,11 @@
 # About Me
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-magnam nobis fuga quos sunt libero nostrum laboriosam numquam commodi
-dicta voluptate cupiditate placeat repellendus vero quidem odio possimus
-quisquam eveniet.
+I eat bits for breakfast. **1's and 0's** course through my veins. Jokes aside, I was the kid who discovered the thrill of staring into the abyss of the DOS prompt before typing `WIN` to launch Windows 3.1. I later installed Linux on the home PC, much to everyone else's dismay. As the internet started to come of age in the late 90's, my mom gave me a book on HTML ... and the rest is history. Throughout all the things I've done in my life so far, tech has always been at my core. If you care to take a deeper dive, check <a href="https://medium.com/@spikeburton/hello-world-d3e75f8ef4fd" target="_blank">this</a> out.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea incidunt ad
-fugit enim atque voluptatem nisi ex nesciunt, quis iste deserunt in
-facilis saepe labore quos ab aliquid repudiandae nam!
+These days I'm a proponent of writing clean, semantic code with a focus on accessibility and mobile-first user experience. Innovation and creativity are what drive me. Unsurprisingly, my academic background in mathematics and my experiences writing dance music are what lead me back to programming. I've previously blogged about my concurrent interests in writing code and electronic music production, which you can read more about <a href="https://medium.com/@spikeburton/how-producing-electronic-music-helped-me-learn-to-write-code-c9cbcf8fe887" target="_blank">here</a>.
 
-I eat bits for breakfast. **1's and 0's** course through my veins. Jokes aside, I was the kid who discovered the thrill of staring into the abyss of a DOS prompt before running [WIN START] ...
+When I'm not glued to my screen, you can find me out on the ATL beltline or at a local brewery. I am currently enjoying the vibrant city life that Atlanta has to offer, and feel fortunate enough to have grown into adulthood right in the middle of it all. I love blogging, and some of my writing has been published in The Startup and tweeted by <a href="https://www.getpostman.com/" target="_blank">Postman</a>. I also really enjoy connecting with people in the community through meetups and tech talks.
 
-I'm a proponent of clean, semantic code with a focus on accessibility and a mobile-first user experience ...
+My current interest in tools and languages is trending toward **Node/React**, **Go**, and going serverless in the cloud with **Amazon Web Services**. The service that powers the blog for this site is an AWS Lambda function built in Node which forwards data from my Medium account, while the site itself is constructed with GatsbyJS.
 
-When I'm not glued to my screen, you can find me on the ATL beltline ... I am currently enjoying the vibrant city life that Atlanta has to offer, and am forunate enough to have grown into adulthood right in the center of it.
-...
-I've previously written about my concurrent interests in writing code and electronic music production, which you can read more about [here](linktoblog)
-...
-My writing has been published in The Startup, tweeted by [Postman](linktosite), and ...
-
-My trending interests in tools and languages currently include **Node/React**, **Go**, and going serverless in the cloud with **Amazon Web Services**. The service that powers the blog for this site is an AWS Lambda function built in Node which forwards data from my Medium account, while the site itself is constructed using GatsbyJS.
-
-Please **[reach out](mailto:spikeburton@icloud.com)** if you'd like to talk! I am currently seeking new opportunities and would love to speak with you. I am also always down to get coffee and shoot the breeze about music, culture, the tech space in general, and video games that I used to be good at but probably suck at now.
+Please **[reach out](mailto:spikeburton@icloud.com)** if you'd like to talk! I am currently seeking new opportunities and would love to speak with you. I am always down to get coffee and shoot the breeze about music, culture, the tech space in general, and video games that I used to be good at but probably suck at now.
