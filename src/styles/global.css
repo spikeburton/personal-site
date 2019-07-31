@@ -1,6 +1,5 @@
 html {
   font: 112.5%/1.45rem sans-serif;
-  /* font-family: sans-serif; */
   box-sizing: border-box;
   overflow-y: scroll;
   -ms-text-size-adjust: 100%;
@@ -67,6 +66,7 @@ pre,
 samp {
   font-family: monospace, monospace;
   font-size: 1em;
+  color: hsla(16, 100%, 47%, 0.8);
 }
 h1 {
   margin-left: 0;
