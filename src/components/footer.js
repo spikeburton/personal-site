@@ -1,10 +1,17 @@
 import React from "react"
+import { css } from "@emotion/core"
 import Social from "./social"
 
 const Footer = ({ social }) => (
   <footer>
     {social && <Social />}
-    <h6>
+    <h6
+      css={css`
+        @media (max-width: 425px) {
+          text-align: center;
+        }
+      `}
+    >
       © {new Date().getFullYear()}, Spike Burton{" "}
       <a
         href="https://www.facebook.com/spikeburton"
