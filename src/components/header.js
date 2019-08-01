@@ -19,6 +19,8 @@ const NavLink = ({ to, children }) => (
         to={to}
         css={css`
           color: hsla(0, 0%, 0%, 0.8);
+          transition: 0.3s ease;
+          -webkit-transition: 0.3s ease;
           &:hover {
             color: hsla(180, 100%, 25%, 0.8);
           }
