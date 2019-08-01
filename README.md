@@ -4,19 +4,26 @@
 
 ✨This is the source code for my personal website hosted on Netlify. The blog on my site uses an AWS microservice I built to grab my latest feed from Medium. The source code for the Lambda function can be found [here](https://github.com/spikeburton/medium-parser).
 
-## Tech Stack
+## 🛠 Tech Stack
 
 - [GatsbyJS](https://www.gatsbyjs.org/) - Static site generation built on React and GraphQL
 - [Emotion](https://emotion.sh/docs/introduction) - CSS in JS
 - [FontAwesome](https://fontawesome.com/) - Social link icons
 - [Netlify](https://www.netlify.com/) - Hosting and continuous deployment
 
-## Site Map
+## 🗺 Site Map
 
-- [/](https://spikeburton.me/)
-- [/blog](https://spikeburton.me/blog)
+    /
+    /blog
 
-## 🚧 TODO 🚧
+1. [Home](https://spikeburton.me/)
+1. [Blog](https://spikeburton.me/blog)
 
-- Sticky navbar
+## 🚧 TODO
+
+- Contact form
+- Center footer / h1 for mobile
+- Transitions for nav links
 - PWA
+- Add SEO metadata
+- Sticky navbar
