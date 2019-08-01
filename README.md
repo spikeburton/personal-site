@@ -22,8 +22,6 @@
 ## 🚧 TODO
 
 - Contact form
-- Center footer / h1 for mobile
-- Transitions for nav links
 - PWA
 - Add SEO metadata
 - Sticky navbar
