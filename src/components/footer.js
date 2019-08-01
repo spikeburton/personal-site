@@ -1,9 +1,9 @@
 import React from "react"
 import Social from "./social"
 
-const Footer = () => (
+const Footer = ({ social }) => (
   <footer>
-    <Social />
+    {social && <Social />}
     <h6>
       © {new Date().getFullYear()}, Spike Burton{" "}
       <a

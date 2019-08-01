@@ -13,7 +13,7 @@ import { css } from "@emotion/core"
 import Header from "./header"
 import Footer from "./footer"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, social }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
         `}
       >
         <main>{children}</main>
-        <Footer />
+        <Footer social={social} />
       </div>
     </>
   )
@@ -56,6 +56,10 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+}
+
+Layout.defaultProps = {
+  social: true,
 }
 
 export default Layout
