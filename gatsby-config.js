@@ -33,6 +33,9 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-emotion`,
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -45,8 +48,6 @@ module.exports = {
         icon: `src/images/sb-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-emotion`,
-    `gatsby-transformer-remark`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
