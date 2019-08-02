@@ -35,7 +35,16 @@ export default () => {
         <Image />
       </div>
       {/* About Me Section */}
-      <section dangerouslySetInnerHTML={{ __html: about.html }} />
+      <section
+        css={css`
+          @media (max-width: 425px) {
+            h1 {
+              text-align: center;
+            }
+          }
+        `}
+        dangerouslySetInnerHTML={{ __html: about.html }}
+      />
     </Layout>
   )
 }
