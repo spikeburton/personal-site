@@ -45,7 +45,7 @@ export default ({ post }) => (
         // Just grab a random image
         // ¯\_(ツ)_/¯
         onError={e => {
-          e.target.src = `http://lorempixel.com/800/400/`
+          e.target.src = `https://lorempixel.com/800/400/`
           e.target.onerror = null
         }}
       />
