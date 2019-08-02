@@ -22,6 +22,5 @@
 ## 🚧 TODO
 
 - Contact form
-- PWA
 - Add SEO metadata
 - Sticky navbar
