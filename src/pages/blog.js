@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react"
+import { navigate } from "gatsby"
+import axios from "axios"
 import { css } from "@emotion/core"
 
 import Layout from "../components/layout"
@@ -10,11 +12,16 @@ export default () => {
   const [posts, setPosts] = useState()
 
   useEffect(() => {
-    fetch(process.env.GATSBY_MEDIUM_API, {
-      method: "POST",
-    })
-      .then(res => res.json())
-      .then(data => setPosts(data))
+    const fetchPosts = async () => {
+      try {
+        const res = await axios.post(process.env.GATSBY_MEDIUM_API)
+        setPosts(res.data)
+      } catch (error) {
+        window.alert(error)
+        navigate("/404")
+      }
+    }
+    fetchPosts()
   }, [])
 
   return (
