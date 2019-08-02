@@ -18,7 +18,7 @@ export default () => {
         setPosts(res.data)
       } catch (error) {
         window.alert(error)
-        navigate("/404")
+        navigate("/")
       }
     }
     fetchPosts()
