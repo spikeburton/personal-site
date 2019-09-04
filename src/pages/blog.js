@@ -17,7 +17,10 @@ export default () => {
         const res = await axios.post(process.env.GATSBY_MEDIUM_API)
         setPosts(res.data)
       } catch (error) {
-        window.alert(error)
+        console.error(error)
+        window.alert(
+          "Due to changes in the way Medium allows the fetching of data, this area of the site is temporarily unavailable. Please check back soon."
+        )
         navigate("/")
       }
     }
