@@ -22,6 +22,5 @@
 
 ## 🚧 TODO
 
-- Contact form
 - Add SEO metadata
 - Sticky navbar
