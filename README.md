@@ -15,6 +15,7 @@
 
     /
     /blog
+    /contact
 
 1. [Home](https://spikeburton.me/)
 1. [Blog](https://spikeburton.me/blog)
