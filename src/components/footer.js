@@ -6,7 +6,7 @@ const Footer = ({ social }) => (
     {social && <Social />}
     <h6>
       © {new Date().getFullYear()}, Spike Burton{" "}
-      <a
+      {/* <a
         href="https://www.facebook.com/spikeburton"
         target="_blank"
         rel="noopener noreferrer"
@@ -15,7 +15,7 @@ const Footer = ({ social }) => (
         <span role="img" aria-label="plug">
           🔌
         </span>
-      </a>
+      </a> */}
     </h6>
   </footer>
 )
