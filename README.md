@@ -19,8 +19,9 @@
 
 1. [Home](https://spikeburton.me/)
 1. [Blog](https://spikeburton.me/blog)
+1. [Contact](https://spikeburton.me/contact)
 
 ## 🚧 TODO
 
-- Add SEO metadata
 - Sticky navbar
+- Hamburger menu
