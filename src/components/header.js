@@ -88,6 +88,7 @@ const Header = ({ siteTitle }) => (
         >
           <NavLink to="/">About</NavLink>
           <NavLink to="/blog">Blog</NavLink>
+          {/* <NavLink to="/contact">Contact</NavLink> */}
         </ul>
       </nav>
     </div>
