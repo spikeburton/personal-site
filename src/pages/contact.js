@@ -38,13 +38,19 @@ export default () => {
             // display: inline-block;
           `}
         >
-          <form name="contact-form" method="POST" data-netlify="true">
+          <form
+            name="contact"
+            method="post"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="contact" />
             <table
               css={css`
                 margin: 0 auto;
                 border: 1px solid #ddd;
                 // border-radius: 7px;
-                box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.12);
+                // box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.12);
                 padding: 1rem;
                 input {
                   margin-bottom: 5px;
