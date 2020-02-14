@@ -38,12 +38,7 @@ export default () => {
             // display: inline-block;
           `}
         >
-          <form
-            name="contact-form"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-          >
+          <form name="contact-form" method="POST" data-netlify="true">
             <table
               css={css`
                 margin: 0 auto;
