@@ -39,7 +39,7 @@ export default () => {
           `}
         >
           <form
-            name="contact"
+            name="contact-form"
             // action="/"
             method="post"
             data-netlify="true"
