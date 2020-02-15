@@ -33,24 +33,20 @@ export default () => {
             Reach Out
           </h1>
         </div>
-        <div
-          css={css`
-            // display: inline-block;
-          `}
-        >
+        <div>
           <form
-            name="contact"
+            name="contact-form"
             method="post"
             data-netlify="true"
             netlify-honeypot="bot-field"
           >
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value="contact-form" />
             <table
               css={css`
                 margin: 0 auto;
                 border: 1px solid #ddd;
-                // border-radius: 7px;
-                // box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.12);
+                // border-radius: 3px;
+                box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.12);
                 padding: 1rem;
                 input {
                   margin-bottom: 5px;
@@ -60,15 +56,17 @@ export default () => {
               <tbody>
                 <tr>
                   <td>
-                    {/* <label htmlFor="name">Your Name </label> */}
+                    {/* <label htmlFor="name">Your Name</label> */}
                     <input
                       type="text"
                       name="name"
                       id="name"
-                      placeholder="Your Name"
+                      placeholder="Name"
+                      required="true"
                       css={css`
-                        // border: 1px solid #ddd;
-                        // border-radius: 3px;
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
                         padding: 5px;
                         width: 100%;
                       `}
@@ -82,14 +80,21 @@ export default () => {
                       type="email"
                       name="email"
                       id="email"
-                      placeholder="Your Email"
+                      placeholder="Email"
+                      required="true"
                       css={css`
-                        // border: 1px solid #ddd;
-                        // border-radius: 3px;
+                        outline: none;
+                        border: none;
+                        border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
                         padding: 5px;
                         width: 100%;
                       `}
                     />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label htmlFor="message">Message</label>
                   </td>
                 </tr>
                 <tr>
@@ -99,10 +104,13 @@ export default () => {
                       id="message"
                       cols="40"
                       rows="10"
-                      placeholder="Say Something!"
+                      // placeholder="Say Something!"
+                      required="true"
                       css={css`
                         // border: 1px solid #ddd;
                         // border-radius: 3px;
+                        border: 1px solid hsla(0, 0%, 0%, 0.12);
+                        resize: none;
                       `}
                     />
                   </td>
