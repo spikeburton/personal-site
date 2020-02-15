@@ -1,39 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import { css } from "@emotion/core"
 
-const NavLink = ({ to, children }) => (
-  <li
-    css={css`
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 1rem;
-      &:last-child {
-        margin-right: 0;
-      }
-    `}
-  >
-    <h4>
-      <Link
-        to={to}
-        css={css`
-          color: hsla(0, 0%, 0%, 0.8);
-          transition: 0.3s ease;
-          -webkit-transition: 0.3s ease;
-          &:hover {
-            color: hsla(180, 100%, 25%, 0.8);
-          }
-          &:active {
-            color: hsla(180, 100%, 25%, 1);
-          }
-        `}
-      >
-        {children}
-      </Link>
-    </h4>
-  </li>
-)
+import { Menu } from "./menu"
+import { css } from "@emotion/core"
+import { Burger } from "./burger"
 
 const Header = ({ siteTitle }) => (
   <header>
@@ -80,16 +51,8 @@ const Header = ({ siteTitle }) => (
           float: right;
         `}
       >
-        <ul
-          css={css`
-            list-style: none;
-            margin: 0;
-          `}
-        >
-          <NavLink to="/">About</NavLink>
-          <NavLink to="/blog">Blog</NavLink>
-          {/* <NavLink to="/contact">Contact</NavLink> */}
-        </ul>
+        <Menu />
+        <Burger />
       </nav>
     </div>
   </header>
