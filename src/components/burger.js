@@ -1,9 +1,11 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { css } from "@emotion/core"
 
-export const Burger = () => {
+export const Burger = ({ show, setShow }) => {
   return (
     <div
+      onClick={() => setShow(!show)}
       css={css`
         // position: absolute;
         // right: 1.45rem;
@@ -16,7 +18,12 @@ export const Burger = () => {
         border: none;
         cursor: pointer;
         padding: 0;
-        z-index: 1;
+        position: absolute;
+        top: 0;
+        right: ${show ? "2rem" : "0"};
+        transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        z-index: 2;
 
         div {
           width: 1.65rem;
@@ -39,7 +46,7 @@ export const Burger = () => {
           }
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 600px) {
           display: none;
         }
       `}
@@ -49,4 +56,9 @@ export const Burger = () => {
       <div />
     </div>
   )
+}
+
+Burger.propTypes = {
+  show: PropTypes.bool,
+  setShow: PropTypes.func,
 }

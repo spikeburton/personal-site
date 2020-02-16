@@ -62,7 +62,7 @@ export default () => {
                       name="name"
                       id="name"
                       placeholder="Name"
-                      required="true"
+                      required={true}
                       css={css`
                         outline: none;
                         border: none;
@@ -81,7 +81,7 @@ export default () => {
                       name="email"
                       id="email"
                       placeholder="Email"
-                      required="true"
+                      required={true}
                       css={css`
                         outline: none;
                         border: none;
@@ -105,7 +105,7 @@ export default () => {
                       cols="40"
                       rows="10"
                       // placeholder="Say Something!"
-                      required="true"
+                      required={true}
                       css={css`
                         // border: 1px solid #ddd;
                         // border-radius: 3px;

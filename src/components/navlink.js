@@ -12,6 +12,11 @@ export const NavLink = ({ to, children }) => (
       &:last-child {
         margin-right: 0;
       }
+      @media (max-width: 600px) {
+        display: block;
+        margin-bottom: 0.07rem;
+        margin-right: 0;
+      }
     `}
   >
     <h4>
