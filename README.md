@@ -24,4 +24,6 @@
 ## 🚧 TODO
 
 - Sticky navbar
-- Hamburger menu
+- ~~Add SEO metadata~~
+- ~~Contact form~~
+- ~~Hamburger menu~~
